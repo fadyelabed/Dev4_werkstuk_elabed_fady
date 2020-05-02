@@ -1,0 +1,74 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #000050;
+}
+header{padding-top: 6em;}
+header img{
+    width: 100%;
+    border-radius: 9px;
+}
+.intro{
+    width: 60%;
+    text-align: left;
+    margin: auto;
+    padding: 5em 0;
+    color: whitesmoke;
+}
+.intro h1{
+    font-weight: 800;
+    font-size: 2rem;
+}
+.intro p{
+    line-height: 1.6;
+}
+.wrapping-content {
+    width: 100%;
+    max-width: 1250px;
+    display: block;
+    margin: 0 auto;
+    z-index: 99;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 30px;
+    overflow: hidden;
+}
+main{}
+.events{
+    /* width: 33.33%; */
+    /* float: left; */
+}
+.events section{
+    width: 31.33%;
+    float: left;
+    margin: 1% 1%;
+    box-sizing: border-box;
+    padding-top: 14rem;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.events section article {
+    color: black;
+    padding: 2rem;
+    background: #ffffff;
+    border-top: 8px solid #ff0080;
+}
+.events section h2{
+    background-color: white;
+    font-size: 1em;
+    width: fit-content;
+    position: absolute;
+    top: 7%;
+    left: 8%;
+    padding: 2% 3.8%;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-size: 0.7em;
+    letter-spacing: 0.5px;
+    color: #ff0080;
+    /* overflow: hidden; */
+}
+.events section article h1{}
+.events section article p{}
