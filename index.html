@@ -158,6 +158,21 @@
             return (arr.indexOf(obj) != -1);
         }
 
+        // show all cards
+        // alle resultaten weergeven
+        function toonAlles() {
+            //opmaak wijzigen van buttons
+            change_button_color("volwassenen", "white", "black");
+            change_button_color("familie", "white", "black");
+            doelgroep_filter = "";
+            //kleuren wijzigen van de andere buttons
+            var arr_length = classes_arr.length;
+            for (var i = 0; i < arr_length; i++) {
+                change_button_color(classes_arr[i], "white", "black");
+            }
+            classes_arr = Array();
+            $(".my_cards").show();
+        }
     </script>
 </body>
 
