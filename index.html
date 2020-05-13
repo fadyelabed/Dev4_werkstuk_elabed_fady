@@ -105,6 +105,33 @@
                 filter_cards();
             }
         }
+        // deze functie dient om het gegeven element te verwijderen van de array
+        function remove_from_array(class_name) {
+            // index van de element in array terugkrijgen
+            const index = classes_arr.indexOf(class_name);
+            // element is aanwezig in de array
+            if (index > -1) {
+                classes_arr.splice(index, 1);
+            }
+        }
+
+        function filter_cards() {
+            //alle kaarten verbergen
+            $(".my_cards").css({
+                "display": "none"
+            });
+            var arr_length = classes_arr.length;
+            // als er geen elementen in array aanwezig zijn => gebruiker heeft geen knoppen gedrukt
+            if (arr_length == 0) {
+                $(".my_cards").show();
+            } else {
+                // Alle resultaten weergeven in array met filters actief
+                for (var i = 0; i < arr_length; i++) {
+                    $("." + classes_arr[i]).show();
+                }
+            }
+            filter_parent_category();
+        }
 
     </script>
 </body>
