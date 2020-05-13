@@ -8,7 +8,11 @@ body{
     padding: 1em 0;
     font-size: 3em;
 }
-
+h3{
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 0.8em;
+}
 .wrapping-content {
     width: 100%;
     max-width: 1250px;
@@ -64,6 +68,7 @@ main{}
     padding: 2rem;
     background: #ffffff;
     border-top: 8px solid #ff0080;
+    height: 8rem;
 }
 .events section h2{
     background-color: white;
@@ -80,5 +85,9 @@ main{}
     color: #ff0080;
     /* overflow: hidden; */
 }
-.events section article h1{}
+.events section article h1{
+    line-height: 1.6;
+    font-size: em;
+    margin-bottom: 1%;
+}
 .events section article p{}
