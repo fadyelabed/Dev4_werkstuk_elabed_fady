@@ -85,6 +85,14 @@
             }
         }
 
+        //verandert opmaak button onclick
+        function change_button_color(class_name, bg_color, text_color) {
+            $("#" + class_name).css({
+                "background-color": bg_color,
+                "color": text_color,
+            });
+        }
+
         // Array aangemaakt voor het opslaan van id's onclick
         var classes_arr = Array();
 
@@ -131,6 +139,23 @@
                 }
             }
             filter_parent_category();
+        }
+
+        function filter_parent_category() {
+            if (doelgroep_filter != "") {
+                $('.my_cards').each(function(i, obj) {
+                    if (!$(this).hasClass(doelgroep_filter)) {
+                        $(this).css({
+                            "display": "none"
+                        });
+                    }
+                });
+            }
+        }
+
+        // checkt als er element aanwezig is in array of niet
+        function include(arr, obj) {
+            return (arr.indexOf(obj) != -1);
         }
 
     </script>
