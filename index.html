@@ -84,6 +84,28 @@
                 change_button_color("volwassenen", "white", "black");
             }
         }
+
+        // Array aangemaakt voor het opslaan van id's onclick
+        var classes_arr = Array();
+
+        function genre(class_name) {
+            // als de item niet aanwezig is in de array = al geklikt geweest
+            if (include(classes_arr, class_name) == false) {
+                //id naar array pushen
+                classes_arr.push(class_name);
+                //opmaak van button wijzigen
+                change_button_color(class_name, "blue", "white");
+                // fiter cards functie aanroepen
+                filter_cards();
+            } else {
+                // id's van de array verwijderen 
+                remove_from_array(class_name);
+                //opmaak van button wijzigen
+                change_button_color(class_name, "white", "black");
+                filter_cards();
+            }
+        }
+
     </script>
 </body>
 
