@@ -2,71 +2,72 @@
 
 <html>
 
-<head>
-    <title>Podium aan huis</title>
-    <meta name="description" content="Fady Elabed's portfolio">
-    <meta name="author" content="Fady Elabed">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="icon" type="image/png" href="images/fav.png">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
-
-</head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="main.js"></script>
-
-<body>
-<main>
-    <div class="wrapping-content">
-      <h1 class="title">Podium aan Huis</h1>
-        <div class="filters">
-            <h2>Doelgroep</h2>
-            <button >
-                volwassenen
-            </button>
-            <button >
-                familie
-            </button>
-            <h2>Genre</h2>
-            <button >
-            theater
-        </button>
-        <button>
-            concert
-        </button>
-        <button>
-            multidisciplinair
-        </button>
-        <button>
-            literatuur
-        </button>
-        <button>
-            comedy
-        </button>
-        <button>
-            dans
-        </button>
-        <button >
-            muziektheater
-        </button>
-        <button>
-            figurentheater
-        </button>
-        <button>
-            circus
-        </button>
-        <button>
-            opera
-        </button>
-
-        </div>
-    <section class="events">
-    </section>
-
-    </div>
-
-</main>
+    <head>
+        <title>Podium aan huis</title>
+        <meta name="author" content="Fady Elabed">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="icon" type="image/png" href="images/fav.png">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
+    
+    </head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+    
+    <body>
+        <main>
+            <div class="wrapping-content">
+                <h1 class="title">Podium aan Huis</h1>
+                <div class="filters">
+                    <h2>Doelgroep</h2>
+                    <button onclick="toonAlles()">
+                    Verwijder filter                
+                    </button>
+                    <button id="volwassenen" onclick="doelgroep(this.id)">
+                        volwassenen
+                    </button>
+                    <button id="familie" onclick="doelgroep(this.id)">
+                        familie
+                    </button>
+                    <h2>Genre</h2>
+                    <button id="theater" onclick="genre(this.id)">
+                        theater
+                    </button>
+                    <button id="concert" onclick="genre(this.id)">
+                        concert
+                    </button>
+                    <button id="multidisciplinair" onclick="genre(this.id)">
+                        multidisciplinair
+                    </button>
+                    <button id="literatuur" onclick="genre(this.id)">
+                        literatuur
+                    </button>
+                    <button id="comedy" onclick="genre(this.id)">
+                        comedy
+                    </button>
+                    <button id="dans" onclick="genre(this.id)">
+                        dans
+                    </button>
+                    <button id="muziektheater" onclick="genre(this.id)">
+                        muziektheater
+                    </button>
+                    <button id="figurentheater" onclick="genre(this.id)">
+                        figurentheater
+                    </button>
+                    <button id="circus" onclick="genre(this.id)">
+                        circus
+                    </button>
+                    <button id="opera" onclick="genre(this.id)">
+                        opera
+                    </button>
+                </div>
+                <section class="events">
+                </section>
+    
+            </div>
+    
+        </main>
 </body>
 
 </html>
