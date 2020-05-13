@@ -68,6 +68,23 @@
             </div>
     
         </main>
+            <!-- filtering begint hier -->
+    <script>
+        var doelgroep_filter = "";
+
+        function doelgroep(id) {
+            doelgroep_filter = id;
+            filter_cards();
+            // als volwassenen geclickt is, verander opmaak knop
+            if (id == "volwassenen") {
+                change_button_color(id, "blue", "white")
+                change_button_color("familie", "white", "black");
+            } else {
+                change_button_color(id, "blue", "white")
+                change_button_color("volwassenen", "white", "black");
+            }
+        }
+    </script>
 </body>
 
 </html>
