@@ -1,0 +1,2 @@
+Zoals je ziet heb ik bij doelgroep 3 knoppen ipv 2 omdat ik moeilijkheden ondervond bij het uitklikken van de ene filter,
+dus heb ik een clear filter gemaakt als oplossing. Voor de rest moet alles wel werken via als je het via live server opstart.

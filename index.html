@@ -72,10 +72,18 @@
     <script>
         var doelgroep_filter = "";
 
+     //verandert opmaak functie
+     function change_button_color(class_name, bg_color, text_color) {
+            $("#" + class_name).css({
+                "background-color": bg_color,
+                "color": text_color,
+            });
+    }
+
         function doelgroep(id) {
             doelgroep_filter = id;
             filter_cards();
-            // als volwassenen geclickt is, verander opmaak knop
+            // als volwassenen geklikt is, verander opmaak knop
             if (id == "volwassenen") {
                 change_button_color(id, "blue", "white")
                 change_button_color("familie", "white", "black");
@@ -85,13 +93,7 @@
             }
         }
 
-        //verandert opmaak button onclick
-        function change_button_color(class_name, bg_color, text_color) {
-            $("#" + class_name).css({
-                "background-color": bg_color,
-                "color": text_color,
-            });
-        }
+   
 
         // Array aangemaakt voor het opslaan van id's onclick
         var classes_arr = Array();
