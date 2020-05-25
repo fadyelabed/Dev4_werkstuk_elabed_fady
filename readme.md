@@ -1,2 +1,3 @@
-Zoals je ziet heb ik bij doelgroep 3 knoppen ipv 2 omdat ik moeilijkheden ondervond bij het uitklikken van de ene filter,
-dus heb ik een clear filter gemaakt als oplossing. Voor de rest moet alles wel werken via als je het via live server opstart.
+In dit project haal ik mijn resultaten van mijn json op in het bestand 'main.js'. Pas ik mijn filtersysteem toe in het index.html bestand en zit mijn json in het bestand data.json. Mijn filtersysteem heb ik uitgewerkt aan de hand van jquery. Filteren op volwassenen en familie werkt, uitvinken van het ene doelgroep werkt niet, hiervoor moet je de filter 'verwijder filter' indrukken. Dit heb ik als oplossing toegepast omdat het uitklikken van de doelgroep filter niet werkte naar behoren. Opmaak van de pagina staat allemaal in 'style.css'. Functional programming werd hier niet echt toegepast, dit omdat ik het wou toepassen op begin, maar niet echt ging dus heb ik het op mijn manier uitgewerkt. Voor de rest van de filters, de genre filters moet alles werken.
+
+Bekijken van het project gaat gewoon via live server.
